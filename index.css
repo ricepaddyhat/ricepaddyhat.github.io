@@ -1,0 +1,62 @@
+* {
+	background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.header {
+	background-image: linear-gradient(to right, #42e5f4, #ff8efd);
+	padding: 15px;
+	padding-left: 25px;
+}
+
+#title {
+	color: white;
+	font-family: Arimo;
+	letter-spacing: 2px;
+}
+
+.caption {
+	color: white;
+	font-family: Arimo;
+	animation-name: example;
+	animation-duration: 0.001s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+  75%  {color:violet; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
+}
+
+.grid {
+	display:grid;
+	grid-template-columns: 250px 250px 250px;
+	grid-template-rows: 250px 250px 250px;
+	grid-auto-rows: 250px;
+	grid-gap: 10px 10px;
+	height: 100%;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	justify-content: center;
+
+}
+
+.images {
+	object-fit: cover;
+	height: 250px;
+	width: 250px;	
+	transition: .3s ease;
+}
+
+.images:hover {
+	opacity: 0.5;
+	transition: .3s ease;
+}
