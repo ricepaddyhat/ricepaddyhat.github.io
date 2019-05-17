@@ -5,7 +5,6 @@ function openTab(event, tabName) {
 
 	for(i=0; i < tabContent.length; i++) {
 		tabContent[i].style.display = "none";
-		console.log("hi");
 	}
 
   	tabButtons = document.getElementsByClassName("tabButtons");

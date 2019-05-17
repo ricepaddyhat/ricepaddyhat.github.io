@@ -29,11 +29,11 @@
 }
 
 @keyframes example {
-  0%   {color:red; left:0px; top:0px;}
-  25%  {color:yellow; left:200px; top:0px;}
-  50%  {color:blue; left:200px; top:200px;}
-  75%  {color:violet; left:0px; top:200px;}
-  100% {color:red; left:0px; top:0px;}
+  0%   {color:red;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  75%  {color:violet;}
+  100% {color:red; left:}
 }
 
 
@@ -52,7 +52,6 @@
 	height: 55px;
 	font-family: Arimo;
 	background-color: rgba(255,255,255, 0.4);
-	overflow: visible;
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
@@ -63,12 +62,20 @@
 	transition: .3s ease;
 }
 
-.tab button .active {
-	background-color: rgba(255,255,255, 0.85);
+.tab button.active {
+	background-color: rgba(255,255,255, 1);
 	transition: .3s ease;
 }
 
+.tabContent {
+	display: none;
+	animation: fade 0.5s;
+}
 
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 /* Art content */
 
