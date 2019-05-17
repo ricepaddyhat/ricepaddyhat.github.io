@@ -5,42 +5,67 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 	</head>
+
 	<body class="body">
 		<div class="header">
 			<h1 id=title>Matt Gelabert</h1>
 			<p class=caption>Hi, I'm a sperg</p>
+			<span class="tab">
+				<button class="tabButtons" onclick="openTab(event, 'about')">About</button>
+				<button class="tabButtons" onclick="openTab(event, 'projects')">Projects</button>
+				<button class="tabButtons" onclick="openTab(event, 'art')">Art</button>
+			</span>
+			<script src="index.js"></script>
+			<script>
+				document.getElementById("about").click();
+			</script>
 		</div>
 
-		<div class="grid">
-			<a href="https://66.media.tumblr.com/0161fcef4360755117d5b9da52c82b70/tumblr_pn95swnaOl1uizwrro1_1280.jpg" target="_blank"> 
-				<img class="images" src="https://66.media.tumblr.com/0161fcef4360755117d5b9da52c82b70/tumblr_pn95swnaOl1uizwrro1_1280.jpg" alt="fox"> 
-			</a>
-			<a href="https://66.media.tumblr.com/73caed2e364ea377e8b8deb10bb0401b/tumblr_pkdt5sas121uizwrro1_1280.jpg" target="_blank"> 
-				<img class="images" src="https://66.media.tumblr.com/73caed2e364ea377e8b8deb10bb0401b/tumblr_pkdt5sas121uizwrro1_1280.jpg" alt="music video"> 
-			</a>
-			<a href="https://66.media.tumblr.com/4e893d303cbfdb42eac28ffc8d567672/tumblr_p1nqzexRFb1uizwrro1_1280.jpg" target="_blank"> 
-				<img class="images" src="https://66.media.tumblr.com/4e893d303cbfdb42eac28ffc8d567672/tumblr_p1nqzexRFb1uizwrro1_1280.jpg" alt="cat1">
-			</a>
-			<a href="https://66.media.tumblr.com/409b252b3fc183907cdf434502ccdce4/tumblr_oo81hzZGdY1uizwrro1_1280.jpg" target="_blank"> 
-				<img class="images" src="https://66.media.tumblr.com/409b252b3fc183907cdf434502ccdce4/tumblr_oo81hzZGdY1uizwrro1_1280.jpg" alt="nightime landscape"> 
-			</a>
-			<a href="https://66.media.tumblr.com/7762b1637cf52a9959d44afd0f4cb589/tumblr_ocz5xiQccP1uizwrro1_1280.jpg" target="_blank">
-				<img class="images" src="https://66.media.tumblr.com/7762b1637cf52a9959d44afd0f4cb589/tumblr_ocz5xiQccP1uizwrro1_1280.jpg" alt="portrait1">
-			</a>
-			<a href="https://66.media.tumblr.com/4be7a3104ea3108288b6c12a669fb166/tumblr_p0fe0rmeB61uizwrro1_1280.jpg" target="_blank">
-				<img class="images" src="https://66.media.tumblr.com/4be7a3104ea3108288b6c12a669fb166/tumblr_p0fe0rmeB61uizwrro1_1280.jpg" alt="crow">
-			</a>
-		</div>
-		<img id="soup" src="m.jpg" alt="fox"> 
 
-		<div class="a">
-			<iframe src="monkey.mp3" allow="autoplay" loop="true" style="display:none" id="iframeAudio">
-			</iframe> 
-
-			<audio autoplay controls loop>
-			    <source src="monkey.mp3" type="audio/mp3">
-			</audio>
+		<div class="tabContent" id="art">
+			<p class="artinfo"> 
+				Art is another passion of mine, here are some of my works! <br>
+				Feel free to send me a request at iamamong@mail.com, if I have time to draw it, it will be featured here!
+			</p>
+			
+			<div class="grid">
+				<a href="https://66.media.tumblr.com/0161fcef4360755117d5b9da52c82b70/tumblr_pn95swnaOl1uizwrro1_1280.jpg" target="_blank"> 
+					<img class="images" src="https://66.media.tumblr.com/0161fcef4360755117d5b9da52c82b70/tumblr_pn95swnaOl1uizwrro1_1280.jpg" alt="fox"> 
+				</a>
+				<a href="https://66.media.tumblr.com/73caed2e364ea377e8b8deb10bb0401b/tumblr_pkdt5sas121uizwrro1_1280.jpg" target="_blank"> 
+					<img class="images" src="https://66.media.tumblr.com/73caed2e364ea377e8b8deb10bb0401b/tumblr_pkdt5sas121uizwrro1_1280.jpg" alt="music video"> 
+				</a>
+				<a href="https://66.media.tumblr.com/4e893d303cbfdb42eac28ffc8d567672/tumblr_p1nqzexRFb1uizwrro1_1280.jpg" target="_blank"> 
+					<img class="images" src="https://66.media.tumblr.com/4e893d303cbfdb42eac28ffc8d567672/tumblr_p1nqzexRFb1uizwrro1_1280.jpg" alt="cat1">
+				</a>
+				<a href="https://66.media.tumblr.com/409b252b3fc183907cdf434502ccdce4/tumblr_oo81hzZGdY1uizwrro1_1280.jpg" target="_blank"> 
+					<img class="images" src="https://66.media.tumblr.com/409b252b3fc183907cdf434502ccdce4/tumblr_oo81hzZGdY1uizwrro1_1280.jpg" alt="nightime landscape"> 
+				</a>
+				<a href="https://66.media.tumblr.com/7762b1637cf52a9959d44afd0f4cb589/tumblr_ocz5xiQccP1uizwrro1_1280.jpg" target="_blank">
+					<img class="images" src="https://66.media.tumblr.com/7762b1637cf52a9959d44afd0f4cb589/tumblr_ocz5xiQccP1uizwrro1_1280.jpg" alt="portrait1">
+				</a>
+				<a href="https://66.media.tumblr.com/4be7a3104ea3108288b6c12a669fb166/tumblr_p0fe0rmeB61uizwrro1_1280.jpg" target="_blank">
+					<img class="images" src="https://66.media.tumblr.com/4be7a3104ea3108288b6c12a669fb166/tumblr_p0fe0rmeB61uizwrro1_1280.jpg" alt="crow">
+				</a>
+			</div>
 		</div>
+
+		<div class="tabContent" id="about">
+			Hi, I'm matt
+			Im a stooge
+
+			this section is under construction
+		</div>
+
+		<div class="tabContent" id="projects">
+			This website
+
+			thats about it
+			this section is under construction
+		</div>
+
+
+
 	</body>
 
 </html>
