@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Shitty Art Blog</title>
+		<title>Matt Gelabert</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 	</head>
 
 	<body class="body">
+		<script src="index.js"></script>
+
+
+
 		<div class="header">
-			<h1 id=title>Matt Gelabert</h1>
-			<p class=caption>Hi, I'm a sperg</p>
+			<h1 id=title>Matt Gelabert
+			<!-- <p class=caption>Hi, I'm a sperg</p> -->
 			<span class="tab">
-				<button class="tabButtons" onclick="openTab(event, 'about')">About</button>
-				<button class="tabButtons" onclick="openTab(event, 'projects')">Projects</button>
-				<button class="tabButtons" onclick="openTab(event, 'art')">Art</button>
+				<button class="tabButtons" onclick="openTab(event, 'about')" id="default">About</button><!--
+				--><button class="tabButtons" onclick="openTab(event, 'projects')">Projects</button><!--
+				--><button class="tabButtons" onclick="openTab(event, 'art')">Art</button>
 			</span>
-			<script src="index.js"></script>
-			<script>
-				document.getElementById("art").click();
-			</script>
+			</h1>
 		</div>
 
 
 		<div class="tabContent" id="art">
-			<p class="artinfo"> 
+			<p class="contentP artCap"> 
 				Art is another passion of mine, here are some of my works! <br>
 				Feel free to send me a request at iamamong@mail.com, if I have time to draw it, it will be featured here!
 			</p>
@@ -51,21 +52,27 @@
 		</div>
 
 		<div class="tabContent" id="about">
-			Hi, I'm matt
-			Im a stooge
-
-			this section is under construction
+			<h1 class="contentTitle">Hi, I'm Matt</h1>
+			<p class="contentP"> 
+				I'm a computer science student at UNSW<br>
+				this section is under construction
+			</p>
 		</div>
 
 		<div class="tabContent" id="projects">
-			This website
-
-			thats about it
+			<h1 class="contentTitle">Projects I've done</h1>
+			<p class="contentP"> 
+			<strong>This Website!</strong>
+			thats about it for now<br>
 			this section is under construction
+			</p>
+			
+
 		</div>
 
-
-
+		<script>
+			document.getElementById("default").click();
+		</script>
 	</body>
 
 </html>

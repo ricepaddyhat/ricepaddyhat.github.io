@@ -7,19 +7,22 @@
     vertical-align: baseline;
 }
 
+
+
 /* Header related */
 .header {
 	background-image: linear-gradient(to right, #42e5f4, #ff8efd);
-	padding: 15px;
-	padding-left: 25px;
 }
 
 #title {
 	color: white;
 	font-family: Arimo;
 	letter-spacing: 2px;
+	padding: 15px;
+	padding-left:25px;
 }
 
+/* this is a flashing animation for memes, unused 
 .caption {
 	color: white;
 	font-family: Arimo;
@@ -33,28 +36,24 @@
   25%  {color:yellow;}
   50%  {color:blue;}
   75%  {color:violet;}
-  100% {color:red; left:}
+  100% {color:red;}
 }
+*/
 
 
-/* tab/nav bar related */
+/* tab/nav-bar related */
 .tab {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
+	float:right;
+	padding-top: 5px;
 }
 
 .tab button {
 	width: 90px;
-	height: 55px;
+	height: 45px;
 	font-family: Arimo;
+	font-size: 13px;
+	text-align: center;
 	background-color: rgba(255,255,255, 0.4);
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
 }
 
 .tab button:hover {
@@ -77,13 +76,37 @@
   to {opacity: 1;}
 }
 
-/* Art content */
 
-.artinfo {
-	text-align: center;
-	margin:25px;
-	font-family: Arimo;
+/* general paragraph and titles for contents*/
+.tabContent {
+	font-family:Arimo;
 	color: #898989;
+	margin: 25px;
+	text-align: center;
+}
+
+.contentTitle {
+	font-family:Arimo;
+	font-size: 25px;
+	color: #898989;	
+}
+
+.contentP {
+	font-family:Arimo;
+	font-size: 15px;
+	color: #898989;
+	padding: 10px;		
+}
+
+
+/* about tab content */
+
+/* projects tab content */
+
+
+/* art content */
+.artCap {
+	padding-bottom:20px;
 }
 
 .grid {
@@ -108,5 +131,3 @@
 	opacity: 0.5;
 	transition: .3s ease;
 }
-
-
