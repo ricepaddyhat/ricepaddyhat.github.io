@@ -77,7 +77,6 @@
 	font-family:Arimo;
 	font-size: 15px;
 	color: #898989;
-			
 }
 
 
@@ -115,6 +114,8 @@
 	background-color: #e5e5e5;
 	height: 200px;
 	text-decoration: none;
+	height:200px;
+	width:1000px
 }
 
 .link {
@@ -138,15 +139,13 @@
 	font-size: 30px;
 	text-align: left;
 	padding-top: 20px;
-	padding-left: 50px;
-	margin-left: 50px;
-
 }
 
 .projectDesc {
 	font-size: 18px;
 	text-align: left;
 }
+
 
 
 /* art content */
