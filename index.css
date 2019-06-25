@@ -8,7 +8,6 @@
 }
 
 
-
 /* Header related */
 .header {
 	background-image: linear-gradient(to right, #42e5f4, #ff8efd);
@@ -21,24 +20,6 @@
 	padding: 15px;
 	padding-left:25px;
 }
-
-/* this is a flashing animation for memes, unused 
-.caption {
-	color: white;
-	font-family: Arimo;
-	animation-name: example;
-	animation-duration: 0.001s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  0%   {color:red;}
-  25%  {color:yellow;}
-  50%  {color:blue;}
-  75%  {color:violet;}
-  100% {color:red;}
-}
-*/
 
 
 /* tab/nav-bar related */
@@ -77,17 +58,18 @@
 }
 
 
-/* general paragraph and titles for contents*/
+/* general paragraph and titles for contents of each tab*/
 .tabContent {
 	font-family:Arimo;
 	color: #898989;
 	margin: 25px;
+	margin-top: 50px;
 	text-align: center;
 }
 
 .contentTitle {
 	font-family:Arimo;
-	font-size: 25px;
+	font-size: 35px;
 	color: #898989;	
 }
 
@@ -95,14 +77,76 @@
 	font-family:Arimo;
 	font-size: 15px;
 	color: #898989;
-	padding: 10px;		
+			
 }
 
 
 /* about tab content */
+.aboutDesc {
+	padding: 15px;
+	font-size: 20px;
+}
+
+.buttonText {
+	padding: 15px;
+}
+
+.socialButtons {
+	margin:50px;
+	display: inline;
+}
+
+.aboutImage {
+	height:50px;
+	width:50px;
+}
+
+.aboutImage:hover {
+	opacity: 0.5;
+	transition: .3s ease;
+}
+
 
 
 /* projects tab content */
+.projectContent {
+	margin-left: 250px;
+	margin-right: 250px;
+	background-color: #e5e5e5;
+	height: 200px;
+	text-decoration: none;
+}
+
+.link {
+	text-decoration: none;
+	color:inherit;
+}
+
+.projectImage{
+	height: 200px;
+	width: 400px;
+	float: left;
+	padding-right: 25px;
+}
+
+.projectContent:hover {
+	opacity: 0.5;
+	transition: .3s ease;
+}
+
+.projectTitle {
+	font-size: 30px;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 50px;
+	margin-left: 50px;
+
+}
+
+.projectDesc {
+	font-size: 18px;
+	text-align: left;
+}
 
 
 /* art content */
@@ -132,3 +176,23 @@
 	opacity: 0.5;
 	transition: .3s ease;
 }
+
+
+
+/* this is a flashing animation for memes, unused 
+.caption {
+	color: white;
+	font-family: Arimo;
+	animation-name: example;
+	animation-duration: 0.001s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {color:red;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  75%  {color:violet;}
+  100% {color:red;}
+}
+*/
