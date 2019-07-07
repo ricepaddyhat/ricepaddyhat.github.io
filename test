@@ -1,1 +1,2 @@
-mkdir hi
+try { 'mkdir hi\n' }
+    catch { throw $_ }
