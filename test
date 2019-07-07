@@ -1,3 +1,1 @@
-$Script = {
-  cd
-}
+mkdir hi
