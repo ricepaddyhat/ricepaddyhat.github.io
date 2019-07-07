@@ -1,1 +1,1 @@
-Visit https://ricepaddyhat.github.io/
+cd
