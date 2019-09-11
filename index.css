@@ -1,197 +1,102 @@
-* {
-	background-color: transparent;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-}
-
-
-/* Header related */
-.header {
+/* navbar*/
+#navBar {
 	background-image: linear-gradient(to right, #42e5f4, #ff8efd);
 }
 
-#title {
-	color: white;
-	font-family: Arimo;
-	letter-spacing: 2px;
-	padding: 15px;
-	padding-left:25px;
+.navbar-brand {
+	font-size: 1.5rem;
 }
 
-
-/* tab/nav-bar related */
-.tab {
-	float:right;
-	padding-top: 5px;
+.nav-item {
+	font-size: 1.25rem;
 }
 
-.tab button {
-	width: 90px;
-	height: 45px;
-	font-family: Arimo;
-	font-size: 13px;
-	text-align: center;
-	background-color: rgba(255,255,255, 0.4);
+/* fix navbar overlapping content in spy-scroll*/
+#about::before,
+#project::before,
+#contact::before {
+  	display: block;
+  	content: '';
+  	margin-top: -3.5rem;
+  	height: 3.5rem;
+  	visibility: hidden;
 }
 
-.tab button:hover {
-	background-color: rgba(255,255,255, 0.7);
+/* content */
+*{
+  	scroll-behavior: smooth;
+  	font-family: 'Lato';
+}
+
+body {
+  	padding-top: 3.5rem;
+}
+
+a {
+  	color: inherit;
+  	text-decoration: inherit;
+}
+
+a:hover {
+  	color: inherit;
+  	text-decoration: inherit;
+}
+
+hr {
+	width: 30rem;
+}
+
+.container {
+	padding: 3.5rem 0rem 3.5rem 0rem;
+}
+
+.title {
+	margin-bottom: 3rem;
+}
+
+#contact-title {
+	margin-bottom: 5rem;
+}
+
+.jumbotron {
+	background:rgba(66, 229, 244, 0.1);
+}
+
+.card {
+	border-radius: 0px;
+}
+
+/* effects/animations */
+.button-link {
+	color: #42e5f4;
+	transition: .2s ease;
+}
+
+.button-link:hover {
+	color: #ff8efd;
+	transition: .2s ease;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(66, 229, 244, 0.35);
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.card:hover:after {
+    opacity: 1;
+}
+
+.card {
 	transition: .3s ease;
 }
 
-.tab button.active {
-	background-color: rgba(255,255,255, 1);
-	transition: .3s ease;
-}
-
-.tabContent {
-	display: none;
-	animation: fade 0.5s;
-}
-
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-
-/* general paragraph and titles for contents of each tab*/
-.tabContent {
-	font-family:Arimo;
-	color: #898989;
-	margin: 25px;
-	margin-top: 50px;
-	text-align: center;
-}
-
-.contentTitle {
-	font-family:Arimo;
-	font-size: 35px;
-	color: #898989;	
-}
-
-.contentP {
-	font-family:Arimo;
-	font-size: 15px;
-	color: #898989;
-}
-
-
-/* about tab content */
-.aboutDesc {
-	padding: 15px;
-	font-size: 20px;
-}
-
-.buttonText {
-	padding: 15px;
-}
-
-.socialButtons {
-	margin:50px;
-	display: inline;
-}
-
-.aboutImage {
-	height:50px;
-	width:50px;
-}
-
-.aboutImage:hover {
+.card:hover {
 	opacity: 0.5;
 	transition: .3s ease;
 }
-
-
-
-/* projects tab content */
-.projectContent {
-	margin-left: 250px;
-	margin-right: 250px;
-	background-color: #e5e5e5;
-	height: 200px;
-	text-decoration: none;
-	height:200px;
-	width:1000px
-}
-
-.link {
-	text-decoration: none;
-	color:inherit;
-}
-
-.projectImage{
-	height: 200px;
-	width: 400px;
-	float: left;
-	padding-right: 25px;
-}
-
-.projectContent:hover {
-	opacity: 0.5;
-	transition: .3s ease;
-}
-
-.projectTitle {
-	font-size: 30px;
-	text-align: left;
-	padding-top: 20px;
-}
-
-.projectDesc {
-	font-size: 18px;
-	text-align: left;
-}
-
-
-
-/* art content */
-.artCap {
-	padding-bottom:20px;
-}
-
-.grid {
-	display:grid;
-	grid-template-columns: 250px 250px 250px;
-	grid-template-rows: 250px 250px;
-	grid-auto-rows: 250px;
-	grid-gap: 10px 10px;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-}
-
-.images {
-	object-fit: cover;
-	height: 250px;
-	width: 250px;	
-	transition: .3s ease;
-}
-
-.images:hover {
-	opacity: 0.5;
-	transition: .3s ease;
-}
-
-
-
-/* this is a flashing animation for memes, unused 
-.caption {
-	color: white;
-	font-family: Arimo;
-	animation-name: example;
-	animation-duration: 0.001s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  0%   {color:red;}
-  25%  {color:yellow;}
-  50%  {color:blue;}
-  75%  {color:violet;}
-  100% {color:red;}
-}
-*/
