@@ -3,27 +3,27 @@ const projects = [
     {
       title: "Painful Breakout",
       link: "https://designdialectics.itch.io/painful-breakout",
-      img: "imgs/painful.jpg",
+      img: "src/imgs/painful.jpg",
       desc: "Entry into the UTS Playmakers Gaming Geek Week Game Jam 2020",
     },
     {
       title: "Unity game prototype",
       link: "https://ricepaddyhat.itch.io/cool-2d-pixel-art-platformer-prototype",
-      img: "imgs/plat.jpg",
+      img: "src/imgs/plat.jpg",
       desc:
         "2D playformer game in Unity2D, playable demo, currently in development",
     },
     {
       title: "USB Rubber Ducky",
       link: "https://www.youtube.com/watch?v=9T9lXhGNJ5c",
-      img: "imgs/digispark.jpg",
+      img: "src/imgs/digispark.jpg",
       desc:
         "Payloads for keystroke injection on a digispark microcontroller, based on the popular Rubber Ducky",
     },
     {
       title: "CI calculator",
       link: "https://github.com/ricepaddyhat/coincidenceIndex",
-      img: "imgs/cipher.jpg",
+      img: "src/imgs/cipher.jpg",
       desc:
         "Cryptographic tool for calculating the coincidence index of text or images of text (tesseract-ocr)",
     },
