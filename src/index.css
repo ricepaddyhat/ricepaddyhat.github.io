@@ -1,0 +1,188 @@
+/* Global stuff */
+:root {
+  --accent-color: #f582f5;
+  --bg-extra-dark: #17263d;
+  --bg-dark: #21334e;
+  --bg-med: #3a4c69;
+  --bg-footer: #273752;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-extra-dark);
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Lato";
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:nth-child(1) {
+  background: var(--bg-extra-dark);
+}
+section:nth-child(2) {
+  background: var(--bg-dark);
+}
+
+
+
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.25rem;
+}
+
+.about-info {
+  margin-bottom: 1rem;
+}
+
+.about-info > * {
+  margin: 0px;
+}
+
+#about > .jumbotron > hr {
+  -webkit-animation: underline 0.75s ease forwards;
+  background-color: var(--accent-color);
+  height: 0.1rem;
+  margin: 0.5rem 0rem;
+}
+
+#about > .jumbotron,
+#project > .jumbotron {
+  background-color: transparent;
+  padding: 0rem;
+}
+
+@media (min-width: 1000px) {
+  #about > .jumbotron,
+  #project > .jumbotron {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #about > .jumbotron,
+  #project > .jumbotron {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  #about > .jumbotron,
+  #project > .jumbotron {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+
+@-webkit-keyframes underline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link > .btn {
+  padding: 0.15rem 0rem;
+  font-size: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+
+.link > .btn:hover {
+  color: var(--accent-color);
+}
+
+/* needed to change svg colour */
+.link > .btn:hover svg {
+  filter: sepia() saturate(10000%) hue-rotate(270deg) brightness(90%);
+}
+
+/* project */
+#projects {
+  max-width: 100%;
+  margin-left: 0px;
+}
+
+.project-container,
+.project-container > a {
+  padding: 0px;
+}
+
+.project-item {
+  border: 0px;
+  background-color: transparent;
+}
+
+.card {
+  padding: 0.2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.project-img-group {
+  position: relative;
+}
+
+.card-img {
+  border-radius: 0rem;
+}
+
+.card-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: 0.3s ease;
+  padding: 1rem;
+  font-size: 1rem;
+  /* box-shadow: 0rem 0rem 0rem 0.2rem var(--accent-color) inset; */
+}
+
+.card:hover .card-text {
+  opacity: 0.8;
+}
+
+.card:hover .card-title {
+  color: var(--accent-color);
+  transition: 0.3s ease;
+}
